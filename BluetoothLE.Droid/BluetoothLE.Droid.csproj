@@ -60,11 +60,11 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\BluetoothLE.Core\BluetoothLE.Core.csproj">
-      <Project>{EBD23762-16B0-4C51-9ACC-1917C2E2DD64}</Project>
-      <Name>BluetoothLE.Core</Name>
+    <ProjectReference Include="..\BluetoothLE.Net\BluetoothLE.Net.csproj">
+      <Project>{6f4b8109-771c-4682-ba65-deaf09234594}</Project>
+      <Name>BluetoothLE.Net</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -126,7 +126,9 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -141,17 +143,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\BluetoothLE.Example\BluetoothLE.Example.csproj">
-      <Project>{1CC1E8C4-5763-4BA6-8A2E-5880755F25C2}</Project>
-      <Name>BluetoothLE.Example</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BluetoothLE.Core\BluetoothLE.Core.csproj">
-      <Project>{EBD23762-16B0-4C51-9ACC-1917C2E2DD64}</Project>
-      <Name>BluetoothLE.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BluetoothLE.Droid\BluetoothLE.Droid.csproj">
       <Project>{BEDC9B01-4519-4607-BCAB-3700ACDF405E}</Project>
       <Name>BluetoothLE.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BluetoothLE.Example.Net\BluetoothLE.Example.Net.csproj">
+      <Project>{5274e00e-b8e0-4df3-9aa1-a4c952c4439e}</Project>
+      <Name>BluetoothLE.Example.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BluetoothLE.Net\BluetoothLE.Net.csproj">
+      <Project>{6f4b8109-771c-4682-ba65-deaf09234594}</Project>
+      <Name>BluetoothLE.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />

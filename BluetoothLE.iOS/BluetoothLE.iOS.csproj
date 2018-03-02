@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -45,11 +45,11 @@
     <Compile Include="Characteristic.cs" />
     <Compile Include="Service.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\BluetoothLE.Core\BluetoothLE.Core.csproj">
-      <Project>{EBD23762-16B0-4C51-9ACC-1917C2E2DD64}</Project>
-      <Name>BluetoothLE.Core</Name>
+    <ProjectReference Include="..\BluetoothLE.Net\BluetoothLE.Net.csproj">
+      <Project>{6f4b8109-771c-4682-ba65-deaf09234594}</Project>
+      <Name>BluetoothLE.Net</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
